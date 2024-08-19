@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class Topic_01_Enviroment {
+public class Topic_01_Check_Enviroment {
 
     WebDriver driver;
 
@@ -30,4 +30,21 @@ public class Topic_01_Enviroment {
         driver.get("https://vi-vn.facebook.com/");
         driver.quit();
     }
+
+    //**
+    // Thực thi 1 testcase manual về mặt cơ bản
+    // 1. Setup: OS/Browser/Web/Page/Data
+    // 2. Action/Excute: Tương tác lên element nào/ nhập liệu/ verify/...
+    // 3. Clean: Delete data test/ account/ browser/...
+    // *//
+
+    //**
+    // Java testing framework
+    // 1. JUnit ( Unit test + API )
+    // 2. TestNG ( UI )
+    // 3. AssertJ
+    // 4. Hamcrest
+    // 5. Mockito
+    // 6. PowerMock
+    // *//
 }
