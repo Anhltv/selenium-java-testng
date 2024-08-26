@@ -6,6 +6,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class Topic_00_Template {
 
     WebDriver driver;
@@ -14,7 +16,7 @@ public class Topic_00_Template {
     public void initialBrowser() {
 
         driver = new FirefoxDriver();
-        driver.get("https://demo.nopcommerce.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
     }
 
