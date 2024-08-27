@@ -226,4 +226,11 @@ public class Topic_14_Checkbox_Radio {
     public void cleanBrowser() {
         driver.quit();
     }
+
+    //**
+    // Các loại alert
+    // 1. Accept alert
+    // 2. Confirm alert -> Accept/ Cancel
+    // 3. Prompt alert -> Nhập -> Accept/ Cancel
+    // */
 }
