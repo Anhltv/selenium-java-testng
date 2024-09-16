@@ -102,7 +102,29 @@ public class Topic_18_Action_II {
 
     }
     @Test
-    public void TC_04_() {
+    public void TC_04_Right_Click() throws InterruptedException {
+
+        driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
+
+        // Click cuột phải vào button
+        actions.contextClick(driver.findElement(By.cssSelector("span.context-menu-one"))).perform();
+        Thread.sleep(3000);
+
+        By quitContextBy = By.cssSelector("li.context-menu-icon-quit");
+
+        Assert.assertTrue(driver.findElement(quitContextBy).isDisplayed());
+
+        // Hover mouse
+        actions.moveToElement(driver.findElement(quitContextBy)).perform();
+
+        Assert.assertTrue(driver.findElement(By.cssSelector("li.context-menu-icon-quit.context-menu-visible.context-menu-hover")).isDisplayed());
+
+        // Click Quit
+        actions.click(driver.findElement(quitContextBy)).perform();
+
+        driver.switchTo().alert().accept();
+
+        Assert.assertFalse(driver.findElement(quitContextBy).isDisplayed());
 
     }
     @Test
