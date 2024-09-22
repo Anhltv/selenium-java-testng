@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -50,7 +49,6 @@ public class Topic_24_JavascriptExecutor {
         jsExecutor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[text()='Mobile'")));
 
 
-
     }
 
     @Test
@@ -62,10 +60,12 @@ public class Topic_24_JavascriptExecutor {
     public void TC_03_() {
 
     }
+
     @Test
     public void TC_04_() {
 
     }
+
     @Test
     public void TC_05_() {
 
