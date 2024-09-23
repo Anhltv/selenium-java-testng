@@ -47,7 +47,7 @@ public class Topic_03_Relative_Locator {
                 .above(By.id("tax_class_id")));
         priceFromeElement.sendKeys("100");
 
-        By customerServiceBy = By.xpath("//a[@contain(@href")
+        By customerServiceBy = By.xpath("//a[@contain(@href");
 
 
     }
