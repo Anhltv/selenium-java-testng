@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    
+<!--    <groups>
+        <run>
+            <include name="category"/>
+        </run>
+    </groups>-->
+    
+    <test name="Run on Chrome browser">
+        <packages>
+            <package name="categories"/>
+            <package name="customers"/>
+            <package name="orders"/>
+        </packages>
+
+<!--        <classes>-->
+<!--            <class name="testng.Topic_02_Annotations"/>-->
+<!--        </classes>-->
+    </test>
+    
+</suite>
