@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium WebDriver" verbose="10">
+
+    <test name="Run on Firefox browser">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="version" value="120"></parameter>
+        <classes>
+            <class name="testng.Topic_09_Pramater"></class>
+        </classes>
+    </test>
+    
+</suite>

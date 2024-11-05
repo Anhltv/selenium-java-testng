@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Orange HRM" verbose="1">
+
+<!--    <test name="Run on Firefox browser">-->
+<!--        <parameter name="browser" value="firefox"></parameter>-->
+<!--        <parameter name="version" value="121"></parameter>-->
+<!--        <packages>-->
+<!--            <package name="testng"></package>-->
+<!--        </packages>-->
+<!--    </test>-->
+
+    <!--Preserve Order for Class-->
+<!--    Nếu set giá trị bằng true thì thứ tự chạy test case sẽ chạy theo thứ tự mình set trong file XML -->
+<!--    Nếu set giá trị bằng false thì thứ tự chạy test case sẽ chạy theo thứ tự bất kỳ mà không trong trong file XMl cũng những không theo thứ tự trong package -->
+
+    <!--Question: Các testcase này có nên phụ thuộc vào testcase khác hay không? (các testcase trong một class) -->
+<!--    Những tính năng chạy theo luồng (flow) thì nên cho phụ thuộc -->
+<!--    CRUD: Create Read Update Delete -->
+
+    <listeners>
+        <listener class-name="listeners.ExtentReport"></listener>
+    </listeners>
+    
+    <test name="Run on Chrome browser" preserve-order="true">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="version" value="121"></parameter>
+        <classes>
+            <class name="testng.Topic_02_Annotations"/>
+            <class name="testng.Topic_13_Dependencies"/>
+            <class name="testng.Topic_05_Priority"/>
+            <class name="testng.Topic_06_Skip"/>
+            <class name="testng.Topic_03_Assert"/>
+            <class name="testng.Topic_04_AlwayRun"/>
+            <class name="testng.Topic_12_Parallel_Method"/>
+            <class name="testng.Topic_08_DataProvider"/>
+        </classes>
+    </test>
+
+</suite>
